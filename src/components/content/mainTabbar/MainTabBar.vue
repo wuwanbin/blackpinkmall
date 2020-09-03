@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="maintabbar">
     <tabbar>
       <tabbaritem
         path="/home"
@@ -43,7 +43,6 @@
         </svg>
 
         <div slot="item-text">分类</div>
-
       </tabbaritem>
       <tabbaritem
         path="/shutcart"
@@ -66,7 +65,6 @@
         </svg>
 
         <div slot="item-text">购物车</div>
-
       </tabbaritem>
       <tabbaritem
         path="/profile"
@@ -92,20 +90,18 @@
       </tabbaritem>
     </tabbar>
   </div>
-
 </template>
 
 <script>
-import tabbar from "./tabbar/TabBar";
-import tabbaritem from "./tabbar/TabBarItem";
-
+import tabbar from "@/components/common/tabbar/TabBar";
+import tabbaritem from "@/components/common/tabbar/TabBarItem";
+import "@/assets/font/iconfont.js";
 export default {
-  name: "",
+  name: "maintabbar",
   components: {
     tabbar,
     tabbaritem
   }
-
 };
 </script>
 

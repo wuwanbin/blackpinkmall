@@ -1,15 +1,19 @@
 <template>
   <div id="app">
+    <router-view></router-view>
+    <maintabbar></maintabbar>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 
+import maintabbar from "@/components/content/mainTabbar/MainTabBar.vue";
 export default {
-  name: 'App',
-  components: {}
-}
+  name: "App",
+  components: {
+    maintabbar
+  }
+};
 </script>
 
 <style>
